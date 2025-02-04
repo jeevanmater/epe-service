@@ -15,4 +15,5 @@ public class Product {
     private Integer productId;
     private String name;
     private BigDecimal price;
+    private Boolean isAvailable;
 }

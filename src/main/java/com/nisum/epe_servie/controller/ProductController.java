@@ -19,8 +19,8 @@ public class ProductController {
 
     @GetMapping(value = "/allProducts")
     public ResponseEntity<List<Product>> allProducts(){
-        List<Product> allProdeucts = Arrays.asList(new Product(1, "Applle", new BigDecimal(1200.00)),
-                new Product(2, "Orange", new BigDecimal(500))
+        List<Product> allProdeucts = Arrays.asList(new Product(1, "Applle", new BigDecimal(1200.00),true),
+                new Product(2, "Orange", new BigDecimal(500),false)
         );
         return ResponseEntity.status(HttpStatus.OK).body(allProdeucts);
     }
